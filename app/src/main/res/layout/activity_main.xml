@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/logoimc" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="Altura (ex.: 1.70)"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edAltura"
+        android:layout_width="140dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_border"
+        android:hint="Metro (m)"
+        android:inputType="number|numberDecimal"
+        android:padding="5dp"
+        android:shadowColor="#853F3F" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Peso (ex.: 76.70)"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edPeso"
+        android:layout_width="140dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_border"
+        android:hint="Quilograma (kg)"
+        android:inputType="numberSigned|number|numberDecimal"
+        android:padding="5dp"
+        android:singleLine="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="4dp"
+        android:text="Resultado:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tCalculo"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="16dp"
+        android:text=""
+        android:textColor="#79D5DF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Calcular" />
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Limpar" />
+</LinearLayout>
